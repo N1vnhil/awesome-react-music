@@ -1,10 +1,11 @@
 import type { RouteObject } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
+import { lazy } from 'react'
 
-import Discover from '@/views/discover'
-import My from '@/views/my'
-import Friend from '@/views/friend'
-import Download from '@/views/download'
+const Discover = lazy(() => import('@/views/discover'))
+const My = lazy(() => import('@/views/discover'))
+const Friend = lazy(() => import('@/views/discover'))
+const Download = lazy(() => import('@/views/discover'))
 
 const routes: RouteObject[] = [
   {
